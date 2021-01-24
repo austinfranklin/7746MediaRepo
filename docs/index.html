@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 
+<script type="text/javascript">
+	function func()
+	{
+		document.body.style.backgroundColor = getRandomColor();
+	}
+	
+function getRandomColor() {
+    var letters = "0123456789ABCDEF".split('');
+    var color = "#";
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+</script>
+
+<body onload='func()'>
+
 <head><link rel="stylesheet" type="text/css" href="style.css" media="screen"/></head>
 
 <div id='title' style="background-image: url('rainbow244.jpg');"><h1>Net Art Media. . . .</h1>
@@ -22,3 +40,5 @@
     </div>    
         
   </div>
+
+  </body>
